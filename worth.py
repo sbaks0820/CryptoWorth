@@ -5,9 +5,9 @@ import urllib3
 urllib3.disable_warnings()
 BASE = 'https://api.coinmarketcap.com/v1/ticker/'
 
-d = json.load(open('~/cryptowatch/balances.json'))
+d = json.load(open('/home/surya/projects/tools/cryptoworth/balances.json'))
 values = []
-print '%30s | %10s | %10s | %10s' % ('Currency', 'Amount', 'Price', 'Value')
+print '%30s | %10s | %10s | %10s' % ('Currency', 'Price', 'Amount', 'Value')
 print '-'*(3*3 + 30 + 10 + 10 + 10)
 for name,balance in d.iteritems():
     url = BASE + name + '/'
