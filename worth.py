@@ -5,7 +5,7 @@ import urllib3
 urllib3.disable_warnings()
 BASE = 'https://api.coinmarketcap.com/v1/ticker/'
 
-d = json.load(open('balances.json'))
+d = json.load(open('~/cryptowatch/balances.json'))
 values = []
 print '%30s | %10s | %10s | %10s' % ('Currency', 'Amount', 'Price', 'Value')
 print '-'*(3*3 + 30 + 10 + 10 + 10)
